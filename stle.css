@@ -9,11 +9,10 @@ body a {
 }
 
 #flag {
-  color: navy;
-  display: inline-block;
-  width: 25%;
-  height: 50px;
-  /* vertical-align: baseline; */
+  background-color: navy;
+  display: inline;
+  width: auto;
+  height: 20px;
 }
 
 img[onclick] {
@@ -38,7 +37,12 @@ p[lang|=fr] {
 
 p[lang|=en] {
   color: #999;
-  margin-block: 0.5em;
+}
+
+#navbar-upper {
+  font-family: sans-serif;
+  font-size: 16pt;
+  float: right;
 }
 
 /*# sourceMappingURL=stle.css.map */
