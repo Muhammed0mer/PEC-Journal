@@ -44,5 +44,9 @@ p[lang|=en] {
   font-size: 16pt;
   float: right;
 }
-
+.navbar-main{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
 /*# sourceMappingURL=stle.css.map */
