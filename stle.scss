@@ -48,3 +48,11 @@ p[lang|="en"]{
     line-height: 50px;
     background-color: rgb(0, 15, 99);
   }
+.navbar-main li{
+    float: left;
+}
+.navbar-main li a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
