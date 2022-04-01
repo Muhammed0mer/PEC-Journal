@@ -51,7 +51,7 @@ p[lang|=en] {
 }
 .navbar-main{
   display: block;
-  height: 25px;
+  height: fit-content;
   line-height: 50px;
   background-color: rgb(0, 15, 99);
 }
