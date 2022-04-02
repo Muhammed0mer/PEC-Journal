@@ -5,15 +5,15 @@
         <title>Journal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stle.css">
-        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
-        <script src="jquery.min.js"></script>
+        <script src="jquery.js"></script>
         <script src="owlcarousel/owl.carousel.min.js"></script>
         
     </head>
@@ -37,14 +37,26 @@
             <p lang="en-US">In US English: The color of the leaves in the fall.</p>
             <p lang="en-UK">In UK English: The colour of the leaves in autumn.</p>
             <p lang="fr">La couleur des feuilles en automne.</p>
-        <div>
+        <!--><div id="gallery">
         <img src="paintcabin_in_hills.jpg" onclick="photocredits('jason')" alt="Photo of the cabin" width="363" height="484"/>
         <img src="cabin_in_hills.jpg" onclick="photocredits('jason')" alt="Illustration of the cabin" width="363" height="480"/>
-    </div>
-    <div class="owl-carousel">
+    </div><!-->
+    <div class="owl-carousel owl-theme" id ="car">
+        
         <div><img src="fer/FO305MsXwAoHtTi.jpeg" alt=""></div>
         <div><img src="fer/FO36u_OWQA0SWSq.jpeg" alt=""></div>
         <div><img src="fer/FO37dIUWQAIw9ZQ.jpeg" alt=""></div>
+        <div><img src="fer/FO39a36XsAQO26o.jpeg" alt=""></div>
     </div>
+    <script>$(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            items:1,
+            center:true
+            }
+        );
+      });</script>
     </body>
 </html>

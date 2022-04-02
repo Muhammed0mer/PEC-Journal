@@ -51,7 +51,7 @@ p[lang|=en] {
 }
 .navbar-main{
   display: block;
-  height: fit-content;
+  height: 35px;
   
   background-color: rgb(0, 15, 99);
 }
@@ -65,5 +65,13 @@ p[lang|=en] {
   display: inline-block;
   text-align: center;
   padding: 5px 15px;
+}
+#gallery{
+  display: none;
+  
+}
+
+#car{
+  width: 50%;
 }
 /*# sourceMappingURL=stle.css.map */
