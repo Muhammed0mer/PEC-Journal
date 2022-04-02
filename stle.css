@@ -44,5 +44,26 @@ p[lang|=en] {
   font-size: 16pt;
   float: right;
 }
-
+.navbar-main ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-main{
+  display: block;
+  height: fit-content;
+  
+  background-color: rgb(0, 15, 99);
+}
+.navbar-main li{
+  float: left;
+}
+.navbar-main li a{
+  font-family: 'DM Serif Text', serif;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 15px;
+}
 /*# sourceMappingURL=stle.css.map */
