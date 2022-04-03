@@ -80,4 +80,18 @@ p[lang|=en] {
 #car{
   width: 50%;
 }
+@media screen and (max-width:550px) {
+  .navbar-main li a{
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width:450px) {
+  .navbar-main li a{
+    font-size: 0.55em;
+    padding: 7px 5px;
+  }
+  .navbar-main{
+    height: 26px;
+  }
+}
 /*# sourceMappingURL=stle.css.map */
