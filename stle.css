@@ -1,12 +1,10 @@
 body {
-  font: 1.2em Georgia, "Times New Roman", times, serif;
+  font: 20px Georgia, "Times New Roman", times, serif;
   background-color: #fff;
   color: #000000;
   margin: 8px;
 }
-body a {
-  color: navy;
-}
+
 
 #flag {
   background-color: navy;
@@ -20,8 +18,9 @@ img[onclick] {
   border: 4px navy solid;
 }
 
-a[href="index.html"] {
-  font-size: 3em;
+#cover-title {
+  
+  font-size: 200%;
   color: black;
   text-decoration: none;
 }
@@ -41,7 +40,8 @@ p[lang|=en] {
 
 #navbar-upper {
   font-family: sans-serif;
-  font-size: 16pt;
+  font-size: 12pt;
+  letter-spacing: 1pt;
   float: right;
 }
 .navbar-main ul {
@@ -52,19 +52,25 @@ p[lang|=en] {
 .navbar-main{
   display: block;
   height: 35px;
-  
   background-color: rgb(0, 15, 99);
 }
 .navbar-main li{
   float: left;
+  
 }
 .navbar-main li a{
+  font-size: 0.85em;
   font-family: 'DM Serif Text', serif;
   color: white;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
-  padding: 5px 15px;
+  text-align:center;
+  padding: 7px 5px;
+  /* height: 25px; */
+  /* width: 25px; */
+}
+.navbar-main li ul li a{
+  display: none;
 }
 #gallery{
   display: none;
