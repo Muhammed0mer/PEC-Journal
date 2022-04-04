@@ -93,5 +93,9 @@ p[lang|=en] {
   .navbar-main{
     height: 26px;
   }
+  #navbar-upper{
+    font-size: 10pt;
+    letter-spacing: 0.5pt;
+  }
 }
 /*# sourceMappingURL=stle.css.map */
