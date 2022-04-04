@@ -54,8 +54,13 @@ p[lang|=en] {
   height: 35px;
   background-color: rgb(0, 15, 99);
 }
+.navbar-main ul{
+  height: 35px;
+}
 .navbar-main li{
   float: left;
+  height: 35px;
+  
   
 }
 .navbar-main li a{
@@ -65,6 +70,7 @@ p[lang|=en] {
   text-decoration: none;
   display: inline-block;
   text-align:center;
+  vertical-align: top;
   padding: 7px 5px;
   /* height: 25px; */
   /* width: 25px; */
@@ -97,5 +103,8 @@ p[lang|=en] {
     font-size: 10pt;
     letter-spacing: 0.5pt;
   }
+}
+img[src="arrow_drop_down_white_24dp.svg"]{
+  margin-top: 5%;
 }
 /*# sourceMappingURL=stle.css.map */
