@@ -100,8 +100,11 @@ p[lang|=en] {
 
 #car{
   width: 100%;
+  /*height: 345px;*/
   padding-top: 35px;
 }
+
+
 @media screen and (max-width:775px) {
   
   .navbar-main>ul>li{
