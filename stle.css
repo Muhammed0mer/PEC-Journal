@@ -99,7 +99,7 @@ p[lang|=en] {
 }
 
 #car{
-  width: 50%;
+  width: 100%;
 }
 @media screen and (max-width:775px) {
   
