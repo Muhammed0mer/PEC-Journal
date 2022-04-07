@@ -59,9 +59,8 @@ p[lang|=en] {
 }
 
 .navbar-main>ul {
+  list-style-type: none;
   
-  margin: 0px;
-  padding: 0px;
 }
 .navbar-main{
   display: block;
@@ -70,13 +69,25 @@ p[lang|=en] {
 }
 .navbar-main ul{
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar-main>ul{
+  
   display: block;
   margin-left: 5px;
 }
+
 .navbar-main li{
+  
+  height: 34px;
+ 
+}
+.navbar-main>ul>li{
   float: left;
   height: 34px;
-  margin-right: 40px; 
+  margin-right: 40px;
+  margin-bottom: 5px;
 }
 .navbar-main a{
   font-size: 0.85em;
@@ -84,7 +95,7 @@ p[lang|=en] {
   color: white;
   text-decoration: none;
   display: inline-block;
-  text-align: center;
+  text-align: centre;
   margin-top: 7px;
   
   /* height: 25px; */
@@ -94,27 +105,27 @@ p[lang|=en] {
   display: none;
   position: absolute;
   background-color: rgb(0, 15, 99);
-  border: 1px solid white;
+  border:0px solid white 1px solid white 1px solid white 1px solid white;
   min-width: 160px;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar-main>ul>li>ul>li{
-  display: block;
+  padding-left:8px;
+  padding-right: 15px;
 }
 .navbar-main>ul>li>ul>li>a{
   font-family: "Roboto Slab", serif;
   text-align: left;
 }
-.navbar-main li:hover{
-  border: 2px solid yellow;
-}
+
 .navbar-main>ul>li:hover>ul{
   display: block;
 }
-
+.navbar-main li:hover>a{
+  border: 2px solid yellow;
+}
 #gallery{
   display: none;
-  
 }
 
 #car{
