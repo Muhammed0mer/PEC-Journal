@@ -48,8 +48,8 @@ p[lang|=en] {
   display: none;
 }
 
-.navbar-main ul {
-  list-style-type: none;
+.navbar-main>ul {
+  
   margin: 0px;
   padding: 0px;
 }
@@ -59,6 +59,7 @@ p[lang|=en] {
   background-color: rgb(0, 15, 99);
 }
 .navbar-main ul{
+  list-style-type: none;
   display: block;
   margin-left: 5px;
 }
@@ -79,10 +80,28 @@ p[lang|=en] {
   /* height: 25px; */
   /* width: 25px; */
 }
-.navbar-main li ul li{
+.navbar-main>ul>li>ul{
   display: none;
-  list-style:inside ;
+  position: absolute;
+  background-color: rgb(0, 15, 99);
+  border: 1px solid white;
+  min-width: 160px;
+  z-index: 1;
 }
+.navbar-main>ul>li>ul>li{
+  display: block;
+}
+.navbar-main>ul>li>ul>li>a{
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+}
+.navbar-main li:hover{
+  border: 2px solid yellow;
+}
+.navbar-main>ul>li:hover>ul{
+  display: block;
+}
+
 #gallery{
   display: none;
   
