@@ -19,6 +19,7 @@
         <script src="jquery.js"></script>
         <script src="owlcarousel/owl.carousel.min.js"></script>
         
+        
     </head>
     <body>
         <div id="nicewrapper">
@@ -29,7 +30,24 @@
                 <a href="#">Login as editor</a> |
                 <a href="#">Contact</a>
             </nav>
+
             <a id="menubtn" href="javascript:void(0);" onclick="menu_func()"><img src="menu_black_24dp.svg" alt="menu button"></a>
+            <script>
+                console.log("gh");
+                function menu_func(){
+                    console.log("strt");
+                    var navbar=document.getElementById("inavbar-main");
+                    if (navbar.className === "navbar-main"){
+                        navbar.className+=" vertical";
+                        console.log("vert");
+                    }
+                    else{
+                        navbar.className="navbar-main";
+                        console.log("no vert");
+                        
+                    }
+                }
+            </script>
             <nav id = "inavbar-main" class="navbar-main">
                 <ul>
                     <li><a href="http://journal.pec.org.pk/index.html">Home</a></li>
@@ -57,19 +75,21 @@
                         <li><a href="http://journal.pec.org.pk/editor_pecj.jsp">For editors</a></li>
                     </ul>
                     </li>
+                    <li id="login-linkbox">
+                        <a href="http://journal.pec.org.pk/index.jsp">Login</a>
+                        <img class ="navbar-icon" src="account_circle_white_24dp.svg">
+                    </li>
                 </ul>
-                <div id="login-linkbox">
-                    <a href="http://journal.pec.org.pk/index.jsp">Login</a>
-                    <img class ="navbar-icon" src="account_circle_white_24dp.svg">
-                </div>
+                
             </nav>
-            
+        
         <div class="owl-carousel owl-theme" id ="car">
             
             <div><img src="fer/FO305MsXwAoHtTi.jpeg" alt=""></div>
             <div><img src="fer/FO36u_OWQA0SWSq.jpeg" alt=""></div>
             <div><img src="fer/FO37dIUWQAIw9ZQ.jpeg" alt=""></div>
             <div><img src="fer/FO39a36XsAQO26o.jpeg" alt=""></div>
+            
         </div>
 
         <script>
