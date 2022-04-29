@@ -78,23 +78,24 @@ p[lang|=en] {
   margin: 0px;
   padding: 0px;
   background-color: rgb(0, 15, 99);
+  z-index: 2;
 }
 .navbar-main>ul{
   display: block;
   padding-left: 5px;
-  
 }
 
 .navbar-main li{
   
   height: 34px;
- 
+  margin-bottom: 10px;
+  
 }
 .navbar-main>ul>li{
   float: left;
   height: 34px;
   margin-right: 40px;
-  margin-bottom: 5px;
+  
 }
 .navbar-main a{
   font-size: 0.85em;
@@ -124,10 +125,12 @@ p[lang|=en] {
   font-family: "Roboto Slab", serif;
   text-align: left;
 }
-
-.navbar-main>ul>li:hover>ul{
-  display: block;
+@media screen and (min-width:763) {
+  .navbar-main>ul>li:hover>ul{
+    display: block;
+  }  
 }
+
 .navbar-main li:hover>a{
   outline: 2px solid yellow;
 }
@@ -186,19 +189,22 @@ p[lang|=en] {
   .navbar-main ul{
     display: none;
   }
+  .navbar-main a{
+    margin-top: 8px;
+  }
   .navbar-main.vertical>ul{
     height: 100%;
     float:none;
     display:block;
     text-align:left;
     clear: both;
+    overflow: scroll;
   }
   .navbar-main.vertical ul{
     list-style-type: none;
     background-color: navy;
     
   }
-  
   .navbar-main.vertical>ul>li{
     position: relative;
     float: none;
@@ -212,6 +218,7 @@ p[lang|=en] {
   .navbar-main.vertical>ul>li>ul>li{
     position:static;
     clear: left;
+    margin: 9px;
   }
 
   #login-linkbox{
