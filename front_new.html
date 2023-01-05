@@ -47,9 +47,11 @@
                         
                     }
                 }
+                
                     $(document).ready(function(){ 
                         $("#inavbar-main>ul>li").click(function(){
-                        console.log("ee");
+                            var x = window.matchMedia("(max-width: 700px)");            
+                            if (x.matches){ 
                         console.log($(this).children("ul").css("display"));
                         if($(this).children("ul").css("display")==="none"){
                             $(this).children("ul").css("display","block");
@@ -57,7 +59,7 @@
                         else{
                             $(this).children("ul").css("display","none");
                         }
-                    })})
+                    }})})
             </script>
             <nav id = "inavbar-main" class="navbar-main">
                 <ul>
@@ -108,7 +110,7 @@
                 $(".owl-carousel").owlCarousel({
                     loop:true,
                     margin:10,
-                    nav:true,
+                    nav:false,
                     items:1,
                     center:true
                     }

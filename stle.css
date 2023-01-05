@@ -157,6 +157,15 @@ p[lang|=en] {
   background-color: navy;
   bottom: 15%;
 }
+.owl-stage-outer{
+  position:relative;
+  z-index: 10;
+}
+.owl-dots{
+  z-index: 99;
+  position: relative; 
+  margin-top: 35px;
+}
 
   
 
